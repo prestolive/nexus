@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+</head>
+<body>
+<div><a href="testtrans" target="_blank">测试事务</a> </div>
+<ul>
+    #foreach($operate in $operates)
+        <li>$!operate.vname,$!operate.vcode</li>
+    #end
+</ul>
+<style src="xxx.css"/>
+<div>
+    <form method="post" action="testinsert">
+        <div><span>code:</span><input type="text" name="code"/></div>
+        <div><span>name:</span><input type="text" name="name"/></div>
+        <div><span>pwd:</span><input type="password" name="password"/></div>
+        <button type="submit">测试插入</button>
+    </form>
+	<table>
+	
+	</table>
+	<div style="width:30px;">
+	
+	</div>
+</div>
+</body>
+</html>
